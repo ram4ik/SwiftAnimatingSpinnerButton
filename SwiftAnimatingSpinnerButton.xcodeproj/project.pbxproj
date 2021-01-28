@@ -13,6 +13,7 @@
 		1D09C7AD25C31C7300952D85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D09C7AB25C31C7300952D85 /* Main.storyboard */; };
 		1D09C7AF25C31C7700952D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D09C7AE25C31C7700952D85 /* Assets.xcassets */; };
 		1D09C7B225C31C7700952D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D09C7B025C31C7700952D85 /* LaunchScreen.storyboard */; };
+		9704274255D8A3BA8CD54342 /* Pods_SwiftAnimatingSpinnerButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FF13DFEC001E6D77678087 /* Pods_SwiftAnimatingSpinnerButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1D09C7AE25C31C7700952D85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D09C7B125C31C7700952D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D09C7B325C31C7700952D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		313E02B2BA402FD33A390151 /* Pods-SwiftAnimatingSpinnerButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAnimatingSpinnerButton.release.xcconfig"; path = "Target Support Files/Pods-SwiftAnimatingSpinnerButton/Pods-SwiftAnimatingSpinnerButton.release.xcconfig"; sourceTree = "<group>"; };
+		48FF13DFEC001E6D77678087 /* Pods_SwiftAnimatingSpinnerButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAnimatingSpinnerButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FE9F6F8257F8F744939F19 /* Pods-SwiftAnimatingSpinnerButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAnimatingSpinnerButton.debug.xcconfig"; path = "Target Support Files/Pods-SwiftAnimatingSpinnerButton/Pods-SwiftAnimatingSpinnerButton.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9704274255D8A3BA8CD54342 /* Pods_SwiftAnimatingSpinnerButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1D09C7A425C31C7300952D85 /* SwiftAnimatingSpinnerButton */,
 				1D09C7A325C31C7300952D85 /* Products */,
+				CC1098BDD035954B883BF911 /* Pods */,
+				25100C7670BBDAB43D7B3885 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SwiftAnimatingSpinnerButton;
 			sourceTree = "<group>";
 		};
+		25100C7670BBDAB43D7B3885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48FF13DFEC001E6D77678087 /* Pods_SwiftAnimatingSpinnerButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC1098BDD035954B883BF911 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2FE9F6F8257F8F744939F19 /* Pods-SwiftAnimatingSpinnerButton.debug.xcconfig */,
+				313E02B2BA402FD33A390151 /* Pods-SwiftAnimatingSpinnerButton.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D09C7B625C31C7700952D85 /* Build configuration list for PBXNativeTarget "SwiftAnimatingSpinnerButton" */;
 			buildPhases = (
+				79458AE4069945AF402773F6 /* [CP] Check Pods Manifest.lock */,
 				1D09C79E25C31C7300952D85 /* Sources */,
 				1D09C79F25C31C7300952D85 /* Frameworks */,
 				1D09C7A025C31C7300952D85 /* Resources */,
+				A41E970BE8EFCCD7595CE853 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79458AE4069945AF402773F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftAnimatingSpinnerButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A41E970BE8EFCCD7595CE853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAnimatingSpinnerButton/Pods-SwiftAnimatingSpinnerButton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAnimatingSpinnerButton/Pods-SwiftAnimatingSpinnerButton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAnimatingSpinnerButton/Pods-SwiftAnimatingSpinnerButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D09C79E25C31C7300952D85 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		1D09C7B725C31C7700952D85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2FE9F6F8257F8F744939F19 /* Pods-SwiftAnimatingSpinnerButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		1D09C7B825C31C7700952D85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 313E02B2BA402FD33A390151 /* Pods-SwiftAnimatingSpinnerButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
